@@ -2,7 +2,7 @@
 /* Container */
 .container{
     display: grid;
-    grid-template-columns: repeat(4,minmax(300px,1fr));
+    grid-template-columns: minmax(250px,0.6fr) repeat(3,minmax(300px,1fr));
     grid-template-rows: 1fr 4.5fr;
     gap: 20px;
     height: 100dvh;
@@ -37,14 +37,14 @@
     display: flex;
 }
 .upper-header > * {
-    flex: 1;
     align-items: center;
 }
 .search-bar{
-    flex: 2;
+    flex: 2 1 300px;
     gap: 1.2rem;
 }
 .profile {
+    flex: 1 1 300px;
     gap: 3rem;
     font-size: 1.4rem;
     margin-right: 6rem;
